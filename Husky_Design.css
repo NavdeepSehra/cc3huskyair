@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+
+.body1{
+	background-color:rgba(33, 202, 219, 0.34);
+	font-family:Raleway, "Raleway Medium";
+}
+.imglogo{
+	height:350px;
+	width:55%;
+	float:left;
+	margin-top:230px;
+	margin-left:50px;
+}
+.logo{
+	margin-top:25px;
+	margin-left:-700px;
+	float:left;
+	height:100px;
+	width:auto;
+}
+.div1{
+	float:right;
+	width:40%;
+	height:300px;
+	margin-top:180px;
+}
+.textboxuser{
+	height:40px;
+	width:130%;
+	border-radius:10px;
+	opacity:90%;
+	font-size:18px;
+	color:#000;
+}
+.textboxuser:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.plogin{
+	font-size:14px;
+	width:64.5%;
+	text-align:justify;
+	color:#666;
+	font-family:Raleway, "Raleway Medium";
+}
+button{
+	background-color:#03a9fc;
+	border:none;
+	color:#FFFFFF;
+	padding: 16px 32px;
+	text-align:center;
+	text-decoration:none;
+	cursor:pointer;
+	transition-duration:0.4s;
+	font-size:16px;
+	border-radius:10px;
+}
+.buttonuser{
+	background-color: white; 
+  	color: black; 
+  	border: 2px solid #008CBA;
+}
+.buttonuser:hover{
+	background-color: #008CBA;
+  	color: white;
+}
+.div3{
+	background-color:rgba(18, 141, 234, 0.16);
+	width:90%;
+	height:600px;
+	margin-top:30px;
+	margin-left:5%;
+}
+.div3:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+  float:right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.backcol{
+	font-family:Raleway, "Raleway Medium";
+}
+
+.divcen{
+	margin-top:50px;
+	margin-left:320px;
+	height:auto;
+	width:50%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.divcen h1{
+	text-align:center;
+}
+#customers {
+  font-family:Raleway, "Raleway Medium";
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0094ff;
+  color: white;
+}
+
+.box{
+        color: #000;
+        padding: 20px;
+        display:none;
+        margin-top: 20px;
+    }
+    .Admin{ background: #FFF; }
+    .Patient{ background: #FFF; }
+    .Hospital{ background: #FFF; }
+	.OrganDonar{ background: #FFF; }
+    .Pilot{ background: #FFF; }
+    .Aircraft{ background: #FFF; }
+	.Doctor{ background: #FFF; }
+	
+	
+#tabb{
+	margin-top:15px;
+	margin-left:450px;
+	width:340px;
+	padding:50px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#tabb [type=text]{
+	border:none;
+	border-bottom:1px solid #008CBA;
+	padding:10px;
+	font-size:14px;
+	width:80%;	
+}
+#tabb label{
+	color:#000000;
+}
+#tabb h1{
+	text-align:center;
+	margin-top:-5px;
+	color:#000000;
+}
+#buttonuser2{
+	background-color:#FFF;
+	border: 2px solid #008CBA ;
+	color:#000;
+	padding: 16px 32px;
+	text-align:center;
+	text-decoration:none;
+	cursor:pointer;
+	transition-duration:0.4s;
+	font-size:16px;
+	border-radius:10px;
+}
+#buttonuser2:hover{
+	background-color: #008CBA;
+  	color: white;
+}
+#buttonuser2 a{
+	text-decoration:none;
+}
+.imgg{
+	height:80px;
+	width:350px;
+	float:none;	
+}

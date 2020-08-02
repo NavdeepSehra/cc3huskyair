@@ -1,0 +1,60 @@
+<?php
+session_start();
+if(isset($_SESSION['role']))
+{
+	if($_SESSION['role'] != 'Admin')
+	{
+		header('location: dashboard_patient.php');
+		}
+	}
+	else
+	{
+		header('location: index.php');
+		}
+?>
+<?php include('Include/connection2.php');?>
+
+<?php 
+$connect = mysqli_connect("localhost", "root", "", "huskyair");
+$query = "SELECT * FROM flight_graph";
+$result = mysqli_query($connect, $query);
+$chart_data = '';
+while($row = mysqli_fetch_array($result))
+{
+ $chart_data .= "{ year:'".$row["year"]."', international_flight:".$row["international_flight"].", domestic_flight:".$row["domestic_flight"]."}, ";
+}
+$chart_data = substr($chart_data, 0, -2);
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<link href="Husky_Design.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8" />
+    <title>Husky Air</title>
+    <link rel="shortcut icon" href="Include/Hlogo.png" />
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+</head>
+<body>
+<?php include('navigate_bar_admin.php'); ?>
+<br /><br />
+  <div class="container" style="width:1250px;">
+   <h3 align="center">Last 10 Years International and Domestic Flights RPK (billion)</h3>
+   <br /><br />
+   <div id="chart"></div>
+  </div>
+</body>
+</html>
+<script>
+Morris.Line({
+ element : 'chart',
+ data:[<?php echo $chart_data; ?>],
+ xkey:'year',
+ ykeys:['international_flight', 'domestic_flight'],
+ labels:['IF', 'DF'],
+ hideHover:'auto',
+ stacked:true
+});
+</script>
